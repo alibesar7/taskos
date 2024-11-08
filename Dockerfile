@@ -1,0 +1,6 @@
+FROM openjdk
+WORKDIR /app
+
+COPY test.java  .
+RUN javac test.java
+cmd java test
